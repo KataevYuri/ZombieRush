@@ -16,7 +16,7 @@ public class MainPlayerController : MonoBehaviour
     private InputAction lookAction;
 
     private Animator animator;
-    private bool isMoving; 
+    private bool isMoving;
 
 
     void Start()
@@ -28,9 +28,10 @@ public class MainPlayerController : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
         moveAction = playerInput.actions["Move"];
         lookAction = playerInput.actions["Look"];
-        
-        
+
+
         animator = GetComponent<Animator>();
+      
     }
 
     void Update()
