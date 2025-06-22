@@ -41,7 +41,7 @@ public class MainPlayerController : MonoBehaviour
         // Для мыши можно оставить старый способ или адаптировать
         mousePosition = gameCamera.ScreenToWorldPoint(Mouse.current.position.ReadValue());
 
-        isMoving = movement.magnitude > 0.1f;
+        isMoving = movement.magnitude > 0.0f;
         
         animator.SetBool("IsMoving", isMoving);
     }
